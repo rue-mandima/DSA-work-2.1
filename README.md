@@ -2,7 +2,7 @@
 
 # 🌸 Rue Learns Python 🌸
 
-### *a lil notebook of everything i learned, one cell at a time* ✨
+
 
 ![Python](https://img.shields.io/badge/Python-3.x-ffb6c1?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-f7c6d9?style=for-the-badge&logo=jupyter&logoColor=white)
@@ -13,95 +13,97 @@
 
 ---
 
-## 💌 hiii, welcome!
+## Overview
 
-This is my Python journey notebook 🐍💕. It starts at `print("hello world")` and ends with me cleaning real student data in **pandas** like a lil data scientist 👩🏾‍💻.
+The notebook is a series of short, self-contained cells. Each one introduces a single concept with a minimal working example. The material moves from syntax and data types through control flow and data structures, then to file input/output, and finally to tabular analysis with pandas. It is, in effect, a lab notebook. The experiments are small, the results are reproducible, and the occasional comment was clearly written late at night.
 
-Every cell is something I learned, tried, broke and then fixed. Some comments have typos. Some strings say *"yoh yoh yoh"*. It's a learning notebook, bestie, it's allowed to be a little chaotic 🫶
+## Contents
 
----
+### 1. Python Foundations
+- Program output, indentation and comments
+- Numeric types (`int`, `float`, `complex`) and explicit type conversion
+- String operations: length, slicing, case conversion, replacement, concatenation and formatting
+- Arithmetic operators: addition, subtraction, multiplication, division and exponentiation
 
-## 🗺️ what's inside
+### 2. Data Structures
+- **Lists:** slicing, step and negative indexing, and modification with `append`, `insert`, `remove`, `pop` and `clear`
+- **Tuples:** construction, immutability, and the single-element tuple, whose trailing comma separates a tuple from a string in parentheses
+- **Sets:** uniqueness, iteration, and the `add`, `update` and `pop` methods. Duplicate pineapples are quietly discarded.
+- **Dictionaries:** key–value access, `keys()` and `values()` views, `update`, `pop`, `popitem`, `del` and `copy`
 
-| 🎀 | topic | what i played with |
-|:--:|:--|:--|
-| 👋 | **Hello World & Basics** | printing, indentation, comments |
-| 🔢 | **Numbers** | `int`, `float`, `complex` & type conversion |
-| 🧵 | **Strings** | length, slicing, `upper()`, `lower()`, `replace()`, concatenation, `format()` |
-| ➕ | **Operators** | addition, subtraction, multiplication, division, exponents |
-| 🍎 | **Lists** | slicing, step & negative indexing, `append`, `insert`, `remove`, `pop`, `clear` |
-| 🎨 | **Tuples** | making them, measuring them, sneakily "updating" them via lists |
-| 🍍 | **Sets** | no duplicates allowed!! `add`, `update`, `pop` |
-| 📖 | **Dictionaries** | keys, values, `update`, `pop`, `popitem`, `del`, `copy` |
-| 🤔 | **If / Elif / Else** | comparisons, shorthand ifs, `and`, `or`, nested ifs, `pass` |
-| 🔁 | **Loops** | `for`, `while`, `range()`, `break`, `continue`, nested loops, loop `else` |
-| 📁 | **File Handling** | opening, reading, appending to `.txt` files |
-| 🐼 | **pandas** | loading CSVs, `loc` / `iloc`, filtering, sorting, new columns |
-| 🧹 | **Data Cleaning** | missing values, `fillna`, duplicates, summary stats, `value_counts` |
+### 3. Control Flow
+- Conditional statements: `if`, `elif`, `else`, conditional expressions and nested conditions
+- Logical operators: `and`, `or`
+- Iteration with `for` and `while` loops, `range()`, nested loops and the often-overlooked loop `else` clause
+- Loop control with `break`, `continue` and `pass`, which is Python's way of saying "nothing to see here"
 
----
+### 4. Applied Exercises
+- Sum of two user-supplied numbers
+- Euclidean distance between two points
+- Parity checks for integers and string lengths
+- Variable swapping with a temporary variable
+- Factorial computation (12! = 479,001,600, which escalates quickly)
+- Sum of the first *n* natural numbers
+- Linear search with `while`–`else`
+- Grade classification
 
-## 🧁 mini programs i built
+### 5. File Handling
+- Opening, reading, partially reading and appending to text files
+- Reading individual lines with `readline()`
 
-- 🧮 **Add two numbers** from user input
-- 📏 **Distance between two points**, aka Pythagoras but make it code
-- ⚖️ **Even or odd** checker (for numbers *and* string lengths!)
-- 🔄 **Swap two variables** like a magic trick
-- ❗ **Factorial finder** (the factorial of 12 is 479,001,600, by the way 😳)
-- ➕ **Sum of natural numbers** with a `while` loop
-- 🔍 **Search a list** using `while` + `else`
-- 🅰️ **Grade checker**
+The sample text file is a candid record of the author's state of mind at the time, preserved for scientific accuracy.
 
----
+### 6. Data Analysis with pandas
+Analysis of `DSA1080_Pandas_Student_Data.csv`, a dataset of 40 student records with the attributes `StudentID`, `Name`, `Course`, `Age`, `Score`, `Attendance`, `StudyHours` and `City`.
 
-## 📊 the pandas era 🐼
+- **Inspection:** `head()`, `shape`, `info()`, `describe()` and missing-value counts
+- **Selection:** column selection, label-based indexing (`loc`) and positional indexing (`iloc`)
+- **Filtering:** single and compound boolean conditions, such as students scoring above 70 *and* studying at least 10 hours
+- **Sorting:** ranking students by score
+- **Feature engineering:** a derived `Total` column
+- **Data cleaning:** median imputation for missing scores, placeholder imputation for missing cities, duplicate detection and range validation
+- **Descriptive statistics:** mean, median, standard deviation, minimum, maximum and frequency distributions
 
-At the end I worked with `DSA1080_Pandas_Student_Data.csv`, a dataset of **40 students** across **4 courses** (IT, Business Analytics, Computer Science & Data Science) and cities like Nairobi, Mombasa, Kisumu, Eldoret & Nakuru 🇰🇪
+## Key Findings
 
-What I did with it:
+After cleaning, the dataset had the following properties:
 
-1. 👀 Inspected it with `.head()`, `.info()`, `.describe()`
-2. 🎯 Picked out columns & rows with `loc` and `iloc`
-3. 🔎 Filtered for students scoring above 70 who also studied 10+ hours
-4. 🏆 Sorted out the top 5 scorers (Tina came first with 97!! 👑)
-5. 🩹 Filled missing scores with the **median** and missing cities with `"Unknown"`
-6. 📈 Calculated the stats: **mean 70.4**, **median 70**, min 44, max 97
+| Metric | Value |
+|:--|--:|
+| Records | 40 |
+| Courses represented | 4 |
+| Mean score | 70.4 |
+| Median score | 70.0 |
+| Standard deviation | 15.11 |
+| Score range | 44 – 97 |
 
----
+Students were split evenly across the four courses (IT, Business Analytics, Computer Science and Data Science), with 10 in each, which is suspiciously tidy for real-world data. Three missing `Score` values were imputed with the median, and two students whose city went unrecorded were assigned to `Unknown`. No duplicate records were found.
 
-## 🚀 how to run it
+## Requirements
+
+- Python 3.x
+- Jupyter Notebook
+- pandas
 
 ```bash
-# 1. clone this cutie
-git clone https://github.com/<your-username>/<your-repo>.git
-cd <your-repo>
-
-# 2. install the goods
 pip install notebook pandas
+```
 
-# 3. open the notebook
+## Usage
+
+```bash
+git clone https://github.com/<username>/<repository>.git
+cd <repository>
 jupyter notebook work.ipynb
 ```
 
-> 💡 **heads up:** a few cells use `input()` so they'll ask you for numbers, and the file-handling cells need a `file.txt` in the same folder. The pandas cells need `DSA1080_Pandas_Student_Data.csv` there too!
+**Notes:**
+- Several cells use `input()` and will wait patiently for you to type something.
+- The file-handling section expects a `file.txt` in the working directory.
+- The pandas section expects `DSA1080_Pandas_Student_Data.csv` in the working directory.
 
----
+## Author
 
-## 🌷 about me
+**Ruvarashe Jo-Ann Mandima**
 
-Hi, I'm **Rue** (Ruvarashe Jo-Ann Mandima) 💖
-20 years old, from Harare 🇿🇼, learning to code one `print()` at a time.
-
-> *"rue is cool"* — `"RUE IS COOL".lower()`, cell 11 🫡
-
----
-
-<div align="center">
-
-### ⭐ if this made you smile, leave a star! ⭐
-
-made with 💕, ☕ and a lot of `print()` statements
-
-🌸 ✨ 🐍 ✨ 🌸
-
-</div>
+> `"RUE IS COOL".lower()` returns `'rue is cool'`. The value is unchanged. Only the volume is lower.
