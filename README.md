@@ -6,8 +6,8 @@
 
 ![Python](https://img.shields.io/badge/Python-3.x-ffb6c1?style=for-the-badge&logo=python&logoColor=white)
 ![Jupyter](https://img.shields.io/badge/Jupyter-Notebook-f7c6d9?style=for-the-badge&logo=jupyter&logoColor=white)
-![pandas](https://img.shields.io/badge/pandas-data%20fun-dcc6f7?style=for-the-badge&logo=pandas&logoColor=white)
-![Vibes](https://img.shields.io/badge/vibes-immaculate-c6f7e2?style=for-the-badge)
+![pandas](https://img.shields.io/badge/pandas-dcc6f7?style=for-the-badge&logo=pandas&logoColor=white)
+
 
 </div>
 
